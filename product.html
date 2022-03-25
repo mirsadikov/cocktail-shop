@@ -14,8 +14,8 @@
       href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/home.css" />
-    <title>Cocktail</title>
+    <link rel="stylesheet" href="/styles/product.css" />
+    <title>Product / Cocktail</title>
   </head>
   <body>
     <header>
@@ -111,195 +111,143 @@
           </ul>
         </nav>
       </div>
-    </header>
-    <main>
-      <!-- HERO -->
-      <section class="hero hero__container">
-        <div class="hero__img"></div>
-        <div class="hero__rich-text">
-          <!-- <div class="hero__shape"></div> -->
-          <p class="text--small">New arrival</p>
-          <h1 class="hero__title titles">Lorem ipsum dolor sit amet</h1>
-          <a href="/product.html" class="link--underlined text--small">Shop new</a>
-        </div>
-      </section>
 
-      <!-- BEST SELLERS -->
-      <section class="bsellers">
-        <div class="bseller__container">
-          <div class="bsellers__title titles">Our best sellers</div>
-          <ul class="bsellers__list">
-            <!-- <li class="bseller">
-              <img
-                src="/imgs/best-seller/bseller1.jpg"
-                alt="best sellers"
-                class="bseller__img"
-              />
-              <h3 class="bseller__title titles">Ipsum dolor</h3>
-              <p class="bseller__desc">
-                Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
-                consequat.
-              </p>
-              <a href="#" class="bseller__link link--underlined text--small"
-                >Shop now</a
-              >
-            </li>
-             -->
-          </ul>
-        </div>
-      </section>
-
-      <!-- ABOUT -->
-      <section class="section-flex about">
-        <p class="section-flex__sub text--small">/de · swa/</p>
-        <h2 class="section-flex__title titles">
-          Ut enim ad minim veniam, quisnostrud exercitation ullamco
-        </h2>
-        <a href="#" class="section-flex__link link--underlined text--small">
-          About us
-        </a>
-      </section>
-
-      <!-- TESTIMONIALS -->
-      <section class="testimonials">
-        <div class="testimonials__container">
-          <ul class="testimonials__list">
-            <!-- <li class="testimonial">
-              <p class="testimonial__text">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <img
-                class="testimonial__brand"
-                src="/imgs/testimonials/forbes.png"
-                alt="forbes logo"
-                loading="lazy"
-              />
-            </li>
-            -->
-          </ul>
-          <div class="testimonials__dots">
-            <!-- <span class="testimonials__dot testimonials__dot--active"></span>
-            <span class="testimonials__dot"></span> -->
-          </div>
-        </div>
-      </section>
-
-      <!-- NEW IN -->
-      <section class="section-grid newin">
-        <div class="section-grid__container">
-          <div class="section-grid__subcontainer">
-            <p class="section-grid__sub text--small">New in</p>
-            <h2 class="section-grid__title titles">Rich and fruity</h2>
-            <p class="section-grid__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a href="#" class="link--underlined text--small">Shop now</a>
-          </div>
+      <!-- BREADCRUMB -->
+      <div class="breadcrumb">
+        <div class="breadcrumb__container">
+          <a href="/" class="breadcrumb__text">Home</a>
           <img
-            src="/imgs/newin.jpg"
-            alt="cocktail"
-            class="section-grid__img"
-            loading="lazy"
+            src="/imgs/icons/rarr-black.svg"
+            class="breadcrumb__arrow"
+            alt="left arr"
           />
-        </div>
-      </section>
-
-      <!-- INGRIENTS -->
-      <section class="ingredients">
-        <div class="ingredients__container">
-          <h2 class="ingredients__title titles">Ingredients</h2>
-          <p class="ingredients__desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <a href="#" class="ingredients__link text--small link--underlined"
-            >Ingredient glossary</a
+          <a
+            href="/product.html"
+            class="breadcrumb__text breadcrumb__text--active"
+            >Product</a
           >
-          <div class="ingredients__list">
-            <div class="ingredient">
+        </div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <section class="product-hero"></section>
+
+      <secton class="additional-products">
+        <h2 class="additional-products__title titles">
+          You might also like...
+        </h2>
+        <div class="additional-products__container">
+          <div class="product-card">
+            <img
+              src="/imgs/shop-product.jpg"
+              alt="product"
+              class="product-card__img"
+            />
+            <h2 class="product-card__big-title titles">Full - bodied</h2>
+            <h3 class="product-card__title">Bottle</h3>
+            <div class="product-card__rating">
               <img
-                src="/imgs/ingredients/earlgray.svg"
-                alt="ingredient"
-                class="ingredient__img"
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
               />
-              <p class="ingredient__name">Earl gray</p>
-            </div>
-            <div class="ingredient">
               <img
-                src="/imgs/ingredients/rose.svg"
-                alt="ingredient"
-                class="ingredient__img"
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
               />
-              <p class="ingredient__name">Rose</p>
-            </div>
-            <div class="ingredient">
               <img
-                src="/imgs/ingredients/pear.svg"
-                alt="ingredient"
-                class="ingredient__img"
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
               />
-              <p class="ingredient__name">Pear</p>
-            </div>
-            <div class="ingredient">
               <img
-                src="/imgs/ingredients/birch.svg"
-                alt="ingredient"
-                class="ingredient__img"
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
               />
-              <p class="ingredient__name">Birch</p>
-            </div>
-            <div class="ingredient">
               <img
-                src="/imgs/ingredients/currant.svg"
-                alt="ingredient"
-                class="ingredient__img"
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
               />
-              <p class="ingredient__name">Black currant</p>
+              <span class="product-card__review">(32 reviews)</span>
             </div>
-            <div class="ingredient">
+            <p class="product-card__price">$35.59</p>
+            <a href="/product.html" class="link--underlined text--small"
+              >Shop now</a
+            >
+          </div>
+          <div class="product-card">
+            <img
+              src="/imgs/shop-product.jpg"
+              alt="product"
+              class="product-card__img"
+            />
+            <h2 class="product-card__big-title titles">Light - bodied</h2>
+            <h3 class="product-card__title">Bottle</h3>
+            <div class="product-card__rating">
               <img
-                src="/imgs/ingredients/bergamot.svg"
-                alt="ingredient"
-                class="ingredient__img"
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
               />
-              <p class="ingredient__name">Bergamot</p>
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
+              />
+              <span class="product-card__review">(32 reviews)</span>
             </div>
+            <p class="product-card__price">$35.59</p>
+            <a href="/product.html" class="link--underlined text--small"
+              >Shop now</a
+            >
+          </div>
+          <div class="product-card">
+            <img
+              src="/imgs/shop-product.jpg"
+              alt="product"
+              class="product-card__img"
+            />
+            <h2 class="product-card__big-title titles">Eral grey tote</h2>
+            <h3 class="product-card__title">Bottle</h3>
+            <div class="product-card__rating">
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-card__star"
+              />
+              <span class="product-card__review">(32 reviews)</span>
+            </div>
+            <p class="product-card__price">$35.59</p>
+            <a href="/product.html" class="link--underlined text--small"
+              >Shop now</a
+            >
           </div>
         </div>
-      </section>
-
-      <!-- LEARN -->
-      <section class="section-grid learn section-grid--reverse">
-        <div class="section-grid__container">
-          <div class="section-grid__subcontainer">
-            <p class="section-grid__sub text--small">Learn</p>
-            <h2 class="section-grid__title titles">Ut enim</h2>
-            <p class="section-grid__desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <a href="#" class="link--underlined text--small">Shop now</a>
-          </div>
-          <img src="/imgs/learn.jpg" alt="cocktail" class="section-grid__img" />
-        </div>
-      </section>
-
-      <!-- REFER -->
-      <section class="section-flex refer">
-        <p class="section-flex__sub text--small">Spread the word</p>
-        <h2 class="section-flex__title titles">Refer a friend</h2>
-        <a href="#" class="section-flex__link link--underlined text--small">
-          Refer now
-        </a>
-      </section>
+      </secton>
 
       <!-- JOIN US -->
       <section class="joinus">
@@ -330,7 +278,6 @@
         </div>
       </section>
     </main>
-
     <!-- FOOTER -->
     <footer class="footer">
       <div class="footer__container">
@@ -442,7 +389,5 @@
         </div>
       </div>
     </footer>
-
-    <script defer src="/scripts/index.js"></script>
   </body>
 </html>

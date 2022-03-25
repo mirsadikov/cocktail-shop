@@ -58,7 +58,7 @@ bestSellers.forEach(function (item) {
     <p class="bseller__desc">
       ${item.desc}
     </p>
-    <a href="#" class="bseller__link link--underlined text--small"
+    <a href="/product.html" class="bseller__link link--underlined text--small"
       >Shop now</a
     >
   </li>

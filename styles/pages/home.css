@@ -281,23 +281,6 @@
   background-size: cover;
 }
 
-/* JOIN US */
-.joinus__title {
-  font-size: var(--font-title);
-  padding: 3.5rem 0;
-  text-align: center;
-}
-
-.joinus__gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.joinus__img {
-  width: 100%;
-  object-fit: cover;
-}
-
 /* RESPONSIVE */
 /* RESPONSIVE */
 /* RESPONSIVE */
@@ -482,11 +465,6 @@
 
   .ingredient {
     flex: 1 0 calc(100% / 3);
-  }
-
-  .joinus__gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 

@@ -1,0 +1,31 @@
+/* BREADCRUMB */
+.breadcrumb {
+  border-top: 1px solid var(--color-grey-light);
+  border-bottom: 1px solid var(--color-grey-light);
+  padding: 8px 0;
+}
+
+.breadcrumb__container {
+  padding: 0 4rem;
+}
+
+.breadcrumb__text {
+  line-height: 170%;
+  font-size: var(--font-normal);
+  color: var(--color-black);
+  opacity: 0.5;
+}
+
+.breadcrumb__text--active {
+  opacity: 1;
+}
+
+.breadcrumb__arrow {
+  margin: 0 1.5rem;
+}
+
+@media only screen and (max-width: 650px) {
+  .breadcrumb {
+    border-top: none;
+  }
+}
