@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/shop.css" />
+    <title>Shop / Cocktail</title>
+  </head>
+  <body>
+    <header>
+      <!-- ANNOUNCEMENT -->
+      <div class="announcement">
+        <div class="announcement__container">
+          <div class="announcement__larr">
+            <img
+              class="announcement__icon"
+              src="/imgs/icons/larr.svg"
+              loading="lazy"
+              alt="left arror"
+            />
+          </div>
+          <div class="announcement__title">
+            Free domestic shipping on orders over $50
+            <a class="announcement__link link link--underlined" href="#"
+              >Learn more</a
+            >
+          </div>
+          <div class="announcement__rarr">
+            <img
+              class="announcement__icon"
+              src="/imgs/icons/rarr.svg"
+              loading="lazy"
+              alt="left arror"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- NAV -->
+      <div class="nav nav__container">
+        <input
+          type="checkbox"
+          name="nav__check"
+          id="nav__check"
+          class="nav__check"
+        />
+        <label for="nav__check" class="nav__hamburger"></label>
+        <a href="/" class="nav__logo-link"
+          ><img
+            class="nav__logo"
+            src="/imgs/nav_logo.svg"
+            alt="nav logo"
+            loading="lazy"
+        /></a>
+        <div class="nav__item nav__cart-mobile">
+          <a href="#"><img src="/imgs/icons/bag.svg" loading="lazy" /></a>
+          <span class="nav__bag-count">0</span>
+        </div>
+
+        <div class="nav__layer-blur"></div>
+        <nav class="nav__bar">
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#">
+                Shop
+                <img class="nav__dropdown" src="/imgs/icons/darr.svg" />
+              </a>
+            </li>
+            <li class="nav__item"><a href="#">About</a></li>
+            <li class="nav__item">
+              <a href="#">
+                Funn staff
+                <img class="nav__dropdown" src="/imgs/icons/darr.svg" />
+              </a>
+            </li>
+            <li class="nav__item"><a href="#">Find us</a></li>
+          </ul>
+          <ul class="nav__links">
+            <li class="nav__item">
+              <a href="#">
+                <img
+                  class="nav__flag"
+                  src="/imgs/icons/usa.svg"
+                  alt="flag usa"
+                />
+                Usa
+                <img
+                  class="nav__dropdown"
+                  src="/imgs/icons/darr.svg"
+                  alt="down arrow"
+                />
+              </a>
+            </li>
+            <li class="nav__item"><a href="#">Contact</a></li>
+            <li class="nav__item"><a href="#">Log in</a></li>
+            <li class="nav__item nav__item-bag">
+              <a href="#"><img src="/imgs/icons/bag.svg" /></a>
+              <span class="nav__bag-count">0</span>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- BREADCRUMB -->
+      <div class="breadcrumb">
+        <div class="breadcrumb__container">
+          <a href="/" class="breadcrumb__text">Home</a>
+          <img
+            src="/imgs/icons/rarr-black.svg"
+            class="breadcrumb__arrow"
+            alt="left arr"
+          />
+          <a href="/shop.html" class="breadcrumb__text breadcrumb__text--active"
+            >Beverages</a
+          >
+        </div>
+      </div>
+    </header>
+    <!-- MAIN -->
+    <main class="main">
+      <h1 class="main__title titles">Shop beverages</h1>
+      <div class="main__container">
+        <div class="cell product cell--mobile-visible">
+          <img
+            src="/imgs/shop-product.jpg"
+            alt="product"
+            class="product__img"
+          />
+          <h2 class="cell__title titles">Variety Pack</h2>
+          <div class="product__rating">
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+          </div>
+          <p class="product__price">
+            $35.59 <span class="product__price--old">$101.00</span>
+          </p>
+          <p class="product__desc">
+            A three-bottle kit with De Soi’s Light, Medium and Full bodied
+            flavors.
+          </p>
+          <a href="#" class="link--underlined text--small">Shop now</a>
+        </div>
+        <div class="cell cell--mobile-hidden">
+          <h2 class="cell__title titles">Variety Pack</h2>
+          <p class="cell__sub">- Delicate and lean to sip -</p>
+          <hr class="cell__divider" />
+          <p class="cell__text">
+            <span class="cell__text--bold">Adaptogenic ingredients: </span> Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </p>
+          <hr class="cell__divider" />
+          <p class="cell__text">
+            <span class="cell__text--bold">Adaptogenic ingredients: </span> Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="cell product cell--mobile-hidden">
+          <img
+            src="/imgs/shop-product.jpg"
+            alt="product"
+            class="product__img"
+          />
+          <h3 class="product__title text--small">Bottle</h3>
+          <div class="product__rating">
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <span class="product__review">(32 reviews)</span>
+          </div>
+          <p class="product__price">$35.59</p>
+          <a href="#" class="link--underlined text--small">Shop now</a>
+        </div>
+        <div class="cell product cell--mobile-hidden">
+          <img
+            src="/imgs/shop-product.jpg"
+            alt="product"
+            class="product__img"
+          />
+          <h3 class="product__title">Bottle</h3>
+          <div class="product__rating">
+            <img src="/imgs/icons/star.svg" class="product__star" alt="star" />
+            <img src="/imgs/icons/star.svg" class="product__star" alt="star" />
+            <img src="/imgs/icons/star.svg" class="product__star" alt="star" />
+            <img src="/imgs/icons/star.svg" class="product__star" alt="star" />
+            <img src="/imgs/icons/star.svg" class="product__star" alt="star" />
+          </div>
+          <p class="product__price">$35.59</p>
+          <a href="#" class="link--underlined text--small">Shop now</a>
+        </div>
+        <!-- ROW -->
+        <div class="cell cell--bg">
+          <h2 class="cell__title titles">Light - bodied</h2>
+          <p class="cell__sub">- Delicate and lean to sip -</p>
+          <hr class="cell__divider" />
+          <p class="cell__text">
+            <span class="cell__text--bold">Adaptogenic ingredients: </span> Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="ingredients">
+            <div class="ingredient">
+              <img
+                src="/imgs/ingredients/earlgray.svg"
+                alt="ingredient"
+                class="ingredient__img"
+              />
+              <p class="ingredient__name">Earl gray</p>
+            </div>
+            <div class="ingredient">
+              <img
+                src="/imgs/ingredients/pear.svg"
+                alt="ingredient"
+                class="ingredient__img"
+              />
+              <p class="ingredient__name">Peach</p>
+            </div>
+            <div class="ingredient">
+              <img
+                src="/imgs/ingredients/currant.svg"
+                alt="ingredient"
+                class="ingredient__img"
+              />
+              <p class="ingredient__name">Pear</p>
+            </div>
+          </div>
+          <hr class="cell__divider" />
+          <p class="cell__text">
+            <span class="cell__text--bold">Adaptogenic ingredients: </span> Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="cell cell--withimg cell__happy-hour">
+          <h2 class="cell__img-title titles">Happy hour 24/7</h2>
+        </div>
+        <div class="cell product">
+          <div class="product__new-badge">New</div>
+          <img
+            src="/imgs/shop-product.jpg"
+            alt="product"
+            class="product__img"
+          />
+          <h3 class="product__title">Bottle</h3>
+          <div class="product__rating">
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <span class="product__review">(32 reviews)</span>
+          </div>
+          <p class="product__price">$35.59</p>
+          <a href="#" class="link--underlined text--small">Shop now</a>
+        </div>
+        <!-- ROW -->
+        <div class="cell cell--bg">
+          <h2 class="cell__title titles">Medium - bodied</h2>
+          <p class="cell__sub">- Delicate and lean to sip -</p>
+          <hr class="cell__divider" />
+          <p class="cell__text">
+            <span class="cell__text--bold">Adaptogenic ingredients: </span> Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="ingredients">
+            <div class="ingredient">
+              <img
+                src="/imgs/ingredients/earlgray.svg"
+                alt="ingredient"
+                class="ingredient__img"
+              />
+              <p class="ingredient__name">Earl gray</p>
+            </div>
+            <div class="ingredient">
+              <img
+                src="/imgs/ingredients/pear.svg"
+                alt="ingredient"
+                class="ingredient__img"
+              />
+              <p class="ingredient__name">Peach</p>
+            </div>
+            <div class="ingredient">
+              <img
+                src="/imgs/ingredients/currant.svg"
+                alt="ingredient"
+                class="ingredient__img"
+              />
+              <p class="ingredient__name">Pear</p>
+            </div>
+          </div>
+          <hr class="cell__divider" />
+          <p class="cell__text">
+            <span class="cell__text--bold">Adaptogenic ingredients: </span> Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="cell product">
+          <img
+            src="/imgs/shop-product.jpg"
+            alt="product"
+            class="product__img"
+          />
+          <h3 class="product__title">Bottle</h3>
+          <div class="product__rating">
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <span class="product__review">(32 reviews)</span>
+          </div>
+          <p class="product__price">$35.59</p>
+          <a href="#" class="link--underlined text--small">Shop now</a>
+        </div>
+        <div class="cell cell--withimg cell__new-lifestyle">
+          <h2 class="cell__img-title titles">New lifestyle</h2>
+        </div>
+        <!-- ROW -->
+        <div class="cell cell--bg">
+          <h2 class="cell__title titles">Medium - bodied</h2>
+          <p class="cell__sub">- Delicate and lean to sip -</p>
+          <hr class="cell__divider" />
+          <p class="cell__text">
+            <span class="cell__text--bold">Adaptogenic ingredients: </span> Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </p>
+          <div class="ingredients">
+            <div class="ingredient">
+              <img
+                src="/imgs/ingredients/earlgray.svg"
+                alt="ingredient"
+                class="ingredient__img"
+              />
+              <p class="ingredient__name">Earl gray</p>
+            </div>
+            <div class="ingredient">
+              <img
+                src="/imgs/ingredients/pear.svg"
+                alt="ingredient"
+                class="ingredient__img"
+              />
+              <p class="ingredient__name">Peach</p>
+            </div>
+            <div class="ingredient">
+              <img
+                src="/imgs/ingredients/currant.svg"
+                alt="ingredient"
+                class="ingredient__img"
+              />
+              <p class="ingredient__name">Pear</p>
+            </div>
+          </div>
+          <hr class="cell__divider" />
+          <p class="cell__text">
+            <span class="cell__text--bold">Adaptogenic ingredients: </span> Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div class="cell cell--withimg cell__rich-flavor">
+          <h2 class="cell__img-title titles">Rich in flavor</h2>
+        </div>
+        <div class="cell product">
+          <img
+            src="/imgs/shop-product.jpg"
+            alt="product"
+            class="product__img"
+          />
+          <h3 class="product__title">Bottle</h3>
+          <div class="product__rating">
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <img
+              src="/imgs/icons/star-filled.svg"
+              class="product__star"
+              alt="star"
+            />
+            <span class="product__review">(32 reviews)</span>
+          </div>
+          <p class="product__price">$35.59</p>
+          <a href="#" class="link--underlined text--small">Shop now</a>
+        </div>
+        <!-- ROW -->
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__main">
+          <div class="footer__column">
+            <h2 class="footer__title">Newsletter</h2>
+            <p class="footer__info">Sign up to save 10% on your next order</p>
+            <form action="#" class="footer__form">
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="footer__input"
+                placeholder="Email Address"
+              />
+              <button type="submit" class="footer__submit">
+                <img src="/imgs/icons/submit.svg" alt="arrow" />
+              </button>
+            </form>
+            <ul class="footer__socials">
+              <li class="footer__social">
+                <a href="#">
+                  <img
+                    src="/imgs/icons/instagram.svg"
+                    class="footer__social-logo"
+                    alt="instagram logo="
+                  />
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="#">
+                  <img
+                    src="/imgs/icons/facebook.svg"
+                    class="footer__social-logo"
+                    alt="facebooklogo="
+                  />
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="#">
+                  <img
+                    src="/imgs/icons/pinterest.svg"
+                    class="footer__social-logo"
+                    alt="pinterest logo="
+                  />
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="#">
+                  <img
+                    src="/imgs/icons/twitter.svg"
+                    class="footer__social-logo"
+                    alt="twitter logo="
+                  />
+                </a>
+              </li>
+              <li class="footer__social">
+                <a href="#">
+                  <img
+                    src="/imgs/icons/youtube.svg"
+                    class="footer__social-logo"
+                    alt="youtube logo="
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__divider"></div>
+          <div class="footer__column">
+            <h3 class="footer__column-name">Explore</h3>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="#">Account</a></li>
+              <li class="footer__link"><a href="#">Gift Card</a></li>
+              <li class="footer__link"><a href="#">Refer a Friend</a></li>
+              <li class="footer__link"><a href="#">Affiliates</a></li>
+              <li class="footer__link"><a href="#">Corporate Gifting</a></li>
+            </ul>
+          </div>
+          <div class="footer__divider"></div>
+          <div class="footer__column">
+            <h3 class="footer__column-name">Get help</h3>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="#">Shop</a></li>
+              <li class="footer__link"><a href="#">FAQ</a></li>
+              <li class="footer__link"><a href="#">Shipping & Returns</a></li>
+              <li class="footer__link"><a href="#">Store Locator</a></li>
+            </ul>
+          </div>
+          <div class="footer__divider"></div>
+          <div class="footer__column">
+            <h3 class="footer__column-name">Company</h3>
+            <ul class="footer__links">
+              <li class="footer__link"><a href="#">About</a></li>
+              <li class="footer__link"><a href="#">Contact</a></li>
+              <li class="footer__link"><a href="#">Blog</a></li>
+              <li class="footer__link"><a href="#">Press</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__footer">
+          <h3 class="footer__footer-title">
+            /DE · SWA/ &nbsp; &nbsp; &copy;2021 Сocktail
+          </h3>
+          <ul class="footer__extra-links">
+            <li class="footer__link"><a href="#">Privacy policy</a></li>
+            <li class="footer__link"><a href="#">Terms of use</a></li>
+            <li class="footer__link"><a href="#">AMASS</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

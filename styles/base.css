@@ -1,0 +1,89 @@
+:root {
+  --color-secondary: #bb6b1e;
+  --color-primary: #fffbf7;
+  --color-primary-dark: #d5ffd8;
+  --color-white: #fff;
+  --color-grey: #7d7d7d;
+  --color-grey-light: #CBCBCB;
+  --color-black: #000;
+  --font-normal: 1.4rem;
+  --font-title: 8rem;
+  --letter-spacing-normal: 0.1em;
+  --font-weight-normal: 500;
+  --font-weight-bold: 700;
+  --max-width: 1920px;
+  --app-height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+  background-color: var(--color-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--color-grey);
+}
+
+::selection {
+  background: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+@media only screen and (max-width: 1360px) {
+  :root {
+    --font-title: 7.2rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  :root {
+    --font-title: 6.8rem;
+  }
+
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  :root {
+    --font-title: 6.4rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  :root {
+    --font-normal: 1.5rem;
+  }
+
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  :root {
+    --font-title: 5.6rem;
+    --font-normal: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  :root {
+    --font-title: 4.8rem;
+  }
+}

@@ -1,0 +1,41 @@
+/* OTHER */
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: var(--color-secondary);
+}
+
+.link--underlined {
+  border-bottom: 1px solid currentColor;
+}
+
+.text--small {
+  font-size: var(--font-normal);
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-normal);
+  color: var(--color-black);
+  line-height: 1.2rem;
+  display: inline-block;
+}
+
+.titles {
+  font-family: 'Philosopher', serif;
+  font-weight: var(--font-weight-bold);
+}
+
+[class$='__container'] {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
