@@ -32,13 +32,6 @@
   font-weight: var(--font-weight-normal);
 }
 
-.cell__divider {
-  background-color: var(--color-grey-light);
-  width: 100%;
-  height: 1px;
-  border: none;
-}
-
 .cell__text {
   font-size: 12px;
   line-height: 20px;

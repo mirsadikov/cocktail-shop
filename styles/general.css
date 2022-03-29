@@ -39,3 +39,10 @@ a:focus {
 .no-scroll {
   overflow: hidden;
 }
+
+hr {
+  background-color: var(--color-grey-light);
+  width: 100%;
+  height: 1px;
+  border: none;
+}

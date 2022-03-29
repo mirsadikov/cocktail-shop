@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="/styles/product.css" />
+    <script src="/scripts/pdp.js" type="module"></script>
     <title>Product / Cocktail</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
           <div class="announcement__larr">
             <img
               class="announcement__icon"
-              src="/imgs/icons/larr.svg"
+              src="/imgs/icons/chevron-left.svg"
               loading="lazy"
               alt="left arror"
             />
@@ -39,7 +40,7 @@
           <div class="announcement__rarr">
             <img
               class="announcement__icon"
-              src="/imgs/icons/rarr.svg"
+              src="/imgs/icons/chevron-right.svg"
               loading="lazy"
               alt="left arror"
             />
@@ -117,7 +118,7 @@
         <div class="breadcrumb__container">
           <a href="/" class="breadcrumb__text">Home</a>
           <img
-            src="/imgs/icons/rarr-black.svg"
+            src="/imgs/icons/chevron-right-black.svg"
             class="breadcrumb__arrow"
             alt="left arr"
           />
@@ -131,8 +132,523 @@
     </header>
     <!-- MAIN -->
     <main class="main">
-      <section class="product-hero"></section>
+      <!-- PRODUCT HERO -->
+      <section class="product-hero">
+        <div class="product-hero__container">
+          <!-- INFO -->
+          <div class="product-hero__info">
+            <p class="product-hero__sub text--small">Non-Alcoholic drink</p>
+            <h1 class="product-hero__title titles">Medium - bodied</h1>
+            <p class="product-hero__text">Light and easy to sip</p>
+            <div class="product-hero__rating">
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-hero__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-hero__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-hero__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-hero__star"
+              />
+              <img
+                src="/imgs/icons/star-filled.svg"
+                class="product-hero__star"
+              />
+              <span class="product-hero__review product-hero__text"
+                >124 reviews</span
+              >
+            </div>
+            <hr class="product-hero__divider" />
+            <p class="product-hero__text">
+              Made with natural birch, Strawberry and Apricot, an earthy and
+              fruity taste.
+            </p>
+            <ul class="product-hero__points">
+              <li>
+                <p class="product-hero__point product-hero__text">
+                  100% Natural ingredients
+                </p>
+              </li>
+              <li>
+                <p class="product-hero__point product-hero__text">
+                  Low Calories
+                </p>
+              </li>
+              <li>
+                <p class="product-hero__point product-hero__text">
+                  Perfect for every occassion
+                </p>
+              </li>
+            </ul>
+            <hr class="product-hero__divider" />
+            <div class="product-hero__share">
+              <span class="product-hero__text">Share on</span>
+              <ul class="product-hero__socials">
+                <li class="product-hero__social">
+                  <a href="#">
+                    <img
+                      src="/imgs/icons/facebook-dark.svg"
+                      class="product-hero__social-logo"
+                      alt="facebook logo"
+                    />
+                  </a>
+                </li>
+                <li class="product-hero__social">
+                  <a href="#">
+                    <img
+                      src="/imgs/icons/pinterest-dark.svg"
+                      class="product-hero__social-logo"
+                      alt="pinterest logo"
+                    />
+                  </a>
+                </li>
+                <li class="product-hero__social">
+                  <a href="#">
+                    <img
+                      src="/imgs/icons/mail-dark.svg"
+                      class="product-hero__social-logo"
+                      alt="mail logo"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <hr class="product-hero__divider" />
+            <a href="#" class="product-hero__action-link text--small"
+              >Shop the can</a
+            >
+          </div>
+          <!-- IMAGE -->
+          <div class="product-hero__img-container">
+            <img
+              src="/imgs/pdp/hero1.png"
+              alt="produdct"
+              class="product-hero__img"
+            />
+            <div class="product-hero__img-nav">
+              <img src="/imgs/icons/larr-big.svg" alt="arrow" />
+              <div class="product-hero__dots">
+                <span
+                  class="product-hero__dot product-hero__dot--active"
+                ></span>
+                <span class="product-hero__dot"></span>
+                <span class="product-hero__dot"></span>
+                <span class="product-hero__dot"></span>
+              </div>
+              <img src="/imgs/icons/rarr-big.svg" alt="arrow" />
+            </div>
+          </div>
+          <!-- ORDER -->
+          <div class="product-hero__order">
+            <h2 class="product-hero__price">$35.59</h2>
+            <hr class="product-hero__divider" />
+            <p class="product-hero__sub text--small">Adaptogenic Ingredients</p>
+            <ul class="product-hero__ingredients">
+              <li class="product-hero__ingredient">
+                <img
+                  src="/imgs/ingredients/currant.svg"
+                  alt="icon"
+                  class="product-hero__ingredient-icon"
+                />
+                <span class="product-hero__text">Strawberry</span>
+              </li>
+              <li class="product-hero__ingredient">
+                <img
+                  src="/imgs/ingredients/earlgray.svg"
+                  alt="icon"
+                  class="product-hero__ingredient-icon"
+                />
+                <span class="product-hero__text">Birch</span>
+              </li>
+              <li class="product-hero__ingredient">
+                <img
+                  src="/imgs/ingredients/pear.svg"
+                  alt="icon"
+                  class="product-hero__ingredient-icon"
+                />
+                <span class="product-hero__text">Apricot</span>
+              </li>
+            </ul>
+            <hr class="product-hero__divider" />
+            <form>
+              <p class="product-hero__sub text--small">Quantity</p>
+              <p class="product-hero__text">
+                Complimentary domestic shipping on 2+ bottles.
+              </p>
+              <ul class="product-hero__counts">
+                <li class="product-hero__count">
+                  <input
+                    class="product-hero__count-radio"
+                    checked
+                    type="radio"
+                    name="quantity"
+                    id="product-quantity-1"
+                    value="1"
+                  />
+                  <label
+                    for="product-quantity-1"
+                    class="product-hero__count-label"
+                    >1</label
+                  >
+                </li>
+                <li class="product-hero__count">
+                  <input
+                    class="product-hero__count-radio"
+                    type="radio"
+                    name="quantity"
+                    id="product-quantity-2"
+                    value="2"
+                  />
+                  <label
+                    for="product-quantity-2"
+                    class="product-hero__count-label"
+                    >2</label
+                  >
+                </li>
+                <li class="product-hero__count">
+                  <input
+                    class="product-hero__count-radio"
+                    type="radio"
+                    name="quantity"
+                    id="product-quantity-3"
+                    value="3"
+                  />
+                  <label
+                    for="product-quantity-3"
+                    class="product-hero__count-label"
+                    >3</label
+                  >
+                </li>
+                <li class="product-hero__count">
+                  <input
+                    class="product-hero__count-radio"
+                    type="radio"
+                    name="quantity"
+                    id="product-quantity-4"
+                    value="6"
+                  />
+                  <label
+                    for="product-quantity-4"
+                    class="product-hero__count-label"
+                    >6</label
+                  >
+                </li>
+                <li class="product-hero__count">
+                  <input
+                    class="product-hero__count-radio"
+                    type="radio"
+                    name="quantity"
+                    id="product-quantity-5"
+                    value="12"
+                  />
+                  <label
+                    for="product-quantity-5"
+                    class="product-hero__count-label"
+                    >12</label
+                  >
+                </li>
+              </ul>
+              <hr class="product-hero__divider" />
+              <div class="product-hero__plans">
+                <div class="product-hero__plan">
+                  <input
+                    type="radio"
+                    name="product-plan"
+                    id="product-plan-1"
+                    value="1"
+                    checked
+                    class="product-hero__plan-radio"
+                  />
+                  <label
+                    for="product-plan-1"
+                    class="product-hero__plan-label text--small"
+                  >
+                    $35.59 &nbsp; One time purcahse
+                  </label>
+                </div>
+                <div class="product-hero__plan">
+                  <input
+                    type="radio"
+                    name="product-plan"
+                    id="product-plan-2"
+                    value="2"
+                    class="product-hero__plan-radio"
+                  />
+                  <label
+                    for="product-plan-2"
+                    class="product-hero__plan-label text--small"
+                  >
+                    $30.00 &nbsp; Subscription (15% off)
+                  </label>
+                  <a href="#" class="product-hero__plan-link">Details</a>
+                </div>
+              </div>
+              <hr class="product-hero__divider" />
+              <div class="product-hero__add-to-bag">
+                <p class="product-hero__text">
+                  Free domestic shipping over $50
+                </p>
+                <button type="submit" class="product-hero__btn text--small">
+                  Add to bag
+                </button>
+              </div>
+            </form>
+            <hr class="product-hero__divider" />
+            <ul class="accordions accordions--absolute">
+              <li class="accordion">
+                <div class="accordion__head">
+                  <h4 class="accordion__title text--small">Details</h4>
+                  <button class="accordion__icon"></button>
+                </div>
+                <div class="accordion__content">
+                  Made with natural birch, Strawberry and Apricot, an earthy and
+                  fruity taste.
+                </div>
+              </li>
+              <li class="accordion">
+                <div class="accordion__head">
+                  <h4 class="accordion__title text--small">Full Ingredients</h4>
+                  <button class="accordion__icon"></button>
+                </div>
+                <div class="accordion__content">
+                  Made with natural birch, Strawberry and Apricot, an earthy and
+                  fruity taste.
+                </div>
+              </li>
+              <li class="accordion">
+                <div class="accordion__head">
+                  <h4 class="accordion__title text--small">Product features</h4>
+                  <button class="accordion__icon"></button>
+                </div>
+                <div class="accordion__content">
+                  Made with natural birch, Strawberry and Apricot, an earthy and
+                  fruity taste.
+                </div>
+              </li>
+            </ul>
+            <hr class="product-hero__divider" />
+          </div>
+        </div>
+      </section>
 
+      <!-- BENEFITS -->
+      <section class="benefits">
+        <div class="benefits__container">
+          <h2 class="benefits__title titles">Benefits and Ingredients</h2>
+          <p class="benefits__desc">
+            <b class="benefits__bold text--small">Benefits:</b> Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+          <ul class="benefits__ingredients">
+            <li class="benefits__ingredient">
+              <img
+                src="/imgs/pdp/strawberry.svg"
+                alt="strawberry"
+                class="benefits__ingredient-img"
+              />
+              <h3 class="benefits__ingredient-title titles">Strawberry</h3>
+              <p class="benefits__ingredient-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </li>
+            <li class="benefits__ingredient">
+              <img
+                src="/imgs/pdp/birch.svg"
+                alt="strawberry"
+                class="benefits__ingredient-img"
+              />
+              <h3 class="benefits__ingredient-title titles">Birch</h3>
+              <p class="benefits__ingredient-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </li>
+            <li class="benefits__ingredient">
+              <img
+                src="/imgs/pdp/apricot.svg"
+                alt="strawberry"
+                class="benefits__ingredient-img"
+              />
+              <h3 class="benefits__ingredient-title titles">Apricot</h3>
+              <p class="benefits__ingredient-info">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
+              </p>
+            </li>
+          </ul>
+          <a href="#" class="benefits__link link--underlined text--small">
+            Ingredient Glossary
+          </a>
+        </div>
+      </section>
+
+      <!-- ENJOY -->
+      <section class="enjoy">
+        <div class="enjoy__container">
+          <h2 class="enjoy__title titles">How to enjoy</h2>
+          <div class="enjoy__info">
+            <h3 class="enjoy__sub text--small">On the Rocks</h3>
+            <p class="enjoy__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+              <br />
+              <br />
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+              quae ab illo inventore veritatis et quasi architecto beatae vitae
+              dicta sunt explicabo.
+            </p>
+          </div>
+          <img src="/imgs/pdp/enjoy.png" alt="cocktail" class="enjoy__img" />
+        </div>
+      </section>
+
+      <!-- RECIPES -->
+      <section class="recipes">
+        <div class="recipes__container">
+          <h3 class="recipes__sub text--small">De soi unique recipes</h3>
+          <div class="recipes__wrapper">
+            <ul class="recipes__list">
+              <div class="recipe">
+                <div class="recipe__img-container">
+                  <img class="recipe__img" src="/imgs/pdp/recipe1.png" alt="" />
+                  <img
+                    src="/imgs/pdp/hero1.png"
+                    alt="bottle"
+                    class="recipe__img-product"
+                  />
+                </div>
+                <div class="recipe__details">
+                  <h2 class="titles recipe__author">Tom Collins Jr.</h2>
+                  <h3 class="recipe__sub text--small">Ingredients</h3>
+                  <ul class="recipe__ingredients">
+                    <li class="recipe__ingredient">3 oz Riverine</li>
+                    <li class="recipe__ingredient">3/4 oz Lemon Juice</li>
+                    <li class="recipe__ingredient">3/4 oz Simple Syrup</li>
+                    <li class="recipe__ingredient">Club Soda</li>
+                  </ul>
+                  <a href="#" class="recipe__link text--small link--underlined"
+                    >View Full recipe</a
+                  >
+                </div>
+              </div>
+              <div class="recipe">
+                <div class="recipe__img-container">
+                  <img class="recipe__img" src="/imgs/pdp/recipe2.png" alt="" />
+                  <img
+                    src="/imgs/pdp/hero1.png"
+                    alt="bottle"
+                    class="recipe__img-product"
+                  />
+                </div>
+                <div class="recipe__details">
+                  <h2 class="titles recipe__author">Tom Collins Jr.</h2>
+                  <h3 class="recipe__sub text--small">Ingredients</h3>
+                  <ul class="recipe__ingredients">
+                    <li class="recipe__ingredient">3 oz Riverine</li>
+                    <li class="recipe__ingredient">3/4 oz Lemon Juice</li>
+                    <li class="recipe__ingredient">3/4 oz Simple Syrup</li>
+                    <li class="recipe__ingredient">Club Soda</li>
+                  </ul>
+                  <a href="#" class="recipe__link text--small link--underlined"
+                    >View Full recipe</a
+                  >
+                </div>
+              </div>
+            </ul>
+            <button class="recipe__next-btn">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- TRY THIS -->
+      <section class="section-grid trythis">
+        <div class="section-grid__container">
+          <div class="section-grid__subcontainer">
+            <p class="section-grid__sub text--small">Try this</p>
+            <h2 class="section-grid__title titles">Variety Pack</h2>
+            <p class="section-grid__desc">
+              Don’t know what to choose? Our variety pack is a three-bottle kit
+              with De Soi’s Light, Medium and Full bodied flavors. Taste all 3
+              flavors at once!
+            </p>
+            <a href="#" class="link--underlined text--small">Shop now</a>
+          </div>
+          <img
+            src="/imgs/trythis.jpg"
+            alt="cocktail"
+            class="section-grid__img"
+          />
+        </div>
+      </section>
+
+      <!-- FAQS -->
+      <section class="faqs">
+        <h2 class="faqs__title titles">Frequently Asked Questions</h2>
+        <ul class="faqs__list accordions">
+          <li class="accordion faq">
+            <div class="accordion__head">
+              <h4 class="accordion__title text--small">
+                What’s inside the bottle?
+              </h4>
+              <button class="accordion__icon"></button>
+            </div>
+            <div class="accordion__content">
+              Made with natural birch, Strawberry and Apricot, an earthy and
+              fruity taste.
+            </div>
+          </li>
+          <li class="accordion faq">
+            <div class="accordion__head">
+              <h4 class="accordion__title text--small">How is it made?</h4>
+              <button class="accordion__icon"></button>
+            </div>
+            <div class="accordion__content">
+              Made with natural birch, Strawberry and Apricot, an earthy and
+              fruity taste.
+            </div>
+          </li>
+          <li class="accordion faq">
+            <div class="accordion__head">
+              <h4 class="accordion__title text--small">
+                how do you drink medium-bodied?
+              </h4>
+              <button class="accordion__icon"></button>
+            </div>
+            <div class="accordion__content">
+              Made with natural birch, Strawberry and Apricot, an earthy and
+              fruity taste.
+            </div>
+          </li>
+          <li class="accordion faq">
+            <div class="accordion__head">
+              <h4 class="accordion__title text--small">
+                how do you drink medium-bodied?
+              </h4>
+              <button class="accordion__icon"></button>
+            </div>
+            <div class="accordion__content">
+              Made with natural birch, Strawberry and Apricot, an earthy and
+              fruity taste.
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <!-- ADDITIONAL PRODUCTS -->
       <secton class="additional-products">
         <h2 class="additional-products__title titles">
           You might also like...
@@ -294,7 +810,7 @@
                 placeholder="Email Address"
               />
               <button type="submit" class="footer__submit">
-                <img src="/imgs/icons/submit.svg" alt="arrow" />
+                <img src="/imgs/icons/rarr.svg" alt="arrow" />
               </button>
             </form>
             <ul class="footer__socials">
