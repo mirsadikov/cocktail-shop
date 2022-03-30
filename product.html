@@ -137,35 +137,37 @@
         <div class="product-hero__container">
           <!-- INFO -->
           <div class="product-hero__info">
-            <p class="product-hero__sub text--small">Non-Alcoholic drink</p>
-            <h1 class="product-hero__title titles">Medium - bodied</h1>
-            <p class="product-hero__text">Light and easy to sip</p>
-            <div class="product-hero__rating">
-              <img
-                src="/imgs/icons/star-filled.svg"
-                class="product-hero__star"
-              />
-              <img
-                src="/imgs/icons/star-filled.svg"
-                class="product-hero__star"
-              />
-              <img
-                src="/imgs/icons/star-filled.svg"
-                class="product-hero__star"
-              />
-              <img
-                src="/imgs/icons/star-filled.svg"
-                class="product-hero__star"
-              />
-              <img
-                src="/imgs/icons/star-filled.svg"
-                class="product-hero__star"
-              />
-              <span class="product-hero__review product-hero__text"
-                >124 reviews</span
-              >
+            <div class="product-hero__block">
+              <p class="product-hero__sub text--small">Non-Alcoholic drink</p>
+              <h1 class="product-hero__title titles">Medium - bodied</h1>
+              <p class="product-hero__text">Light and easy to sip</p>
+              <div class="product-hero__rating">
+                <img
+                  src="/imgs/icons/star-filled.svg"
+                  class="product-hero__star"
+                />
+                <img
+                  src="/imgs/icons/star-filled.svg"
+                  class="product-hero__star"
+                />
+                <img
+                  src="/imgs/icons/star-filled.svg"
+                  class="product-hero__star"
+                />
+                <img
+                  src="/imgs/icons/star-filled.svg"
+                  class="product-hero__star"
+                />
+                <img
+                  src="/imgs/icons/star-filled.svg"
+                  class="product-hero__star"
+                />
+                <span class="product-hero__review product-hero__text"
+                  >124 reviews</span
+                >
+              </div>
+              <hr class="product-hero__divider" />
             </div>
-            <hr class="product-hero__divider" />
             <p class="product-hero__text">
               Made with natural birch, Strawberry and Apricot, an earthy and
               fruity taste.
@@ -188,42 +190,44 @@
               </li>
             </ul>
             <hr class="product-hero__divider" />
-            <div class="product-hero__share">
-              <span class="product-hero__text">Share on</span>
-              <ul class="product-hero__socials">
-                <li class="product-hero__social">
-                  <a href="#">
-                    <img
-                      src="/imgs/icons/facebook-dark.svg"
-                      class="product-hero__social-logo"
-                      alt="facebook logo"
-                    />
-                  </a>
-                </li>
-                <li class="product-hero__social">
-                  <a href="#">
-                    <img
-                      src="/imgs/icons/pinterest-dark.svg"
-                      class="product-hero__social-logo"
-                      alt="pinterest logo"
-                    />
-                  </a>
-                </li>
-                <li class="product-hero__social">
-                  <a href="#">
-                    <img
-                      src="/imgs/icons/mail-dark.svg"
-                      class="product-hero__social-logo"
-                      alt="mail logo"
-                    />
-                  </a>
-                </li>
-              </ul>
+            <div class="product-hero__block product-hero__block-share">
+              <div class="product-hero__share">
+                <span class="product-hero__text">Share on</span>
+                <ul class="product-hero__socials">
+                  <li class="product-hero__social">
+                    <a href="#">
+                      <img
+                        src="/imgs/icons/facebook-dark.svg"
+                        class="product-hero__social-logo"
+                        alt="facebook logo"
+                      />
+                    </a>
+                  </li>
+                  <li class="product-hero__social">
+                    <a href="#">
+                      <img
+                        src="/imgs/icons/pinterest-dark.svg"
+                        class="product-hero__social-logo"
+                        alt="pinterest logo"
+                      />
+                    </a>
+                  </li>
+                  <li class="product-hero__social">
+                    <a href="#">
+                      <img
+                        src="/imgs/icons/mail-dark.svg"
+                        class="product-hero__social-logo"
+                        alt="mail logo"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <hr class="product-hero__divider" />
+              <a href="#" class="product-hero__action-link text--small"
+                >Shop the can</a
+              >
             </div>
-            <hr class="product-hero__divider" />
-            <a href="#" class="product-hero__action-link text--small"
-              >Shop the can</a
-            >
           </div>
           <!-- IMAGE -->
           <div class="product-hero__img-container">
@@ -247,8 +251,10 @@
           </div>
           <!-- ORDER -->
           <div class="product-hero__order">
-            <h2 class="product-hero__price">$35.59</h2>
-            <hr class="product-hero__divider" />
+            <div class="product-hero__block">
+              <h2 class="product-hero__price">$35.59</h2>
+              <hr class="product-hero__divider" />
+            </div>
             <p class="product-hero__sub text--small">Adaptogenic Ingredients</p>
             <ul class="product-hero__ingredients">
               <li class="product-hero__ingredient">
@@ -370,7 +376,7 @@
                     for="product-plan-1"
                     class="product-hero__plan-label text--small"
                   >
-                    $35.59 &nbsp; One time purcahse
+                    $35.59 &nbsp;One time purcahse
                   </label>
                 </div>
                 <div class="product-hero__plan">
@@ -381,13 +387,19 @@
                     value="2"
                     class="product-hero__plan-radio"
                   />
-                  <label
-                    for="product-plan-2"
-                    class="product-hero__plan-label text--small"
-                  >
-                    $30.00 &nbsp; Subscription (15% off)
-                  </label>
-                  <a href="#" class="product-hero__plan-link">Details</a>
+                  <div>
+                    <label
+                      for="product-plan-2"
+                      class="product-hero__plan-label text--small"
+                    >
+                      $30.00 &nbsp;Subscription (15% off)
+                    </label>
+                    <a
+                      href="#"
+                      class="product-hero__plan-link product-hero__text"
+                      >Details</a
+                    >
+                  </div>
                 </div>
               </div>
               <hr class="product-hero__divider" />
@@ -597,55 +609,65 @@
 
       <!-- FAQS -->
       <section class="faqs">
-        <h2 class="faqs__title titles">Frequently Asked Questions</h2>
-        <ul class="faqs__list accordions">
-          <li class="accordion faq">
-            <div class="accordion__head">
-              <h4 class="accordion__title text--small">
-                What’s inside the bottle?
-              </h4>
-              <button class="accordion__icon"></button>
-            </div>
-            <div class="accordion__content">
-              Made with natural birch, Strawberry and Apricot, an earthy and
-              fruity taste.
-            </div>
-          </li>
-          <li class="accordion faq">
-            <div class="accordion__head">
-              <h4 class="accordion__title text--small">How is it made?</h4>
-              <button class="accordion__icon"></button>
-            </div>
-            <div class="accordion__content">
-              Made with natural birch, Strawberry and Apricot, an earthy and
-              fruity taste.
-            </div>
-          </li>
-          <li class="accordion faq">
-            <div class="accordion__head">
-              <h4 class="accordion__title text--small">
-                how do you drink medium-bodied?
-              </h4>
-              <button class="accordion__icon"></button>
-            </div>
-            <div class="accordion__content">
-              Made with natural birch, Strawberry and Apricot, an earthy and
-              fruity taste.
-            </div>
-          </li>
-          <li class="accordion faq">
-            <div class="accordion__head">
-              <h4 class="accordion__title text--small">
-                how do you drink medium-bodied?
-              </h4>
-              <button class="accordion__icon"></button>
-            </div>
-            <div class="accordion__content">
-              Made with natural birch, Strawberry and Apricot, an earthy and
-              fruity taste.
-            </div>
-          </li>
-        </ul>
+        <div class="faqs__container">
+          <h2 class="faqs__title titles">Frequently Asked Questions</h2>
+          <ul class="faqs__list accordions">
+            <li class="accordion faq">
+              <div class="accordion__head">
+                <h4 class="accordion__title text--small">
+                  What’s inside the bottle?
+                </h4>
+                <button class="accordion__icon"></button>
+              </div>
+              <div class="accordion__content">
+                Medium-bodied is made with the following 14 botanicals:
+                Strawberry, Birtch root, Apricot...etc. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna.
+              </div>
+            </li>
+            <li class="accordion faq">
+              <div class="accordion__head">
+                <h4 class="accordion__title text--small">How is it made?</h4>
+                <button class="accordion__icon"></button>
+              </div>
+              <div class="accordion__content">
+                Medium-bodied is made with the following 14 botanicals:
+                Strawberry, Birtch root, Apricot...etc. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna.
+              </div>
+            </li>
+            <li class="accordion faq">
+              <div class="accordion__head">
+                <h4 class="accordion__title text--small">
+                  how do you drink medium-bodied?
+                </h4>
+                <button class="accordion__icon"></button>
+              </div>
+              <div class="accordion__content">
+                Medium-bodied is made with the following 14 botanicals:
+                Strawberry, Birtch root, Apricot...etc. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna.
+              </div>
+            </li>
+            <li class="accordion faq">
+              <div class="accordion__head">
+                <h4 class="accordion__title text--small">
+                  how do you drink medium-bodied?
+                </h4>
+                <button class="accordion__icon"></button>
+              </div>
+              <div class="accordion__content">
+                Medium-bodied is made with the following 14 botanicals:
+                Strawberry, Birtch root, Apricot...etc. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna.
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- ADDITIONAL PRODUCTS -->
