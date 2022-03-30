@@ -132,15 +132,18 @@
               <img class="table__img" src="/imgs/cart.png" alt="product" />
               <div class="cart-item__block">
                 <h2 class="cart-item__title">Medium-bodied</h2>
-                <p class="cart-item__text">1 bottle</p>
-                <p class="cart-item__text">Delivery every 1 month</p>
+                <div class="cart-item__points">
+                  <p class="cart-item__text">1 bottle</p>
+                  <p class="cart-item__text">Delivery every 1 month</p>
+                </div>
                 <a href="#" class="cart-item__text cart-item__link">Remove</a>
               </div>
             </div>
-            <div class="table__cell">
-              $28.00&nbsp;<span class="cart-item__old-price">$30.00</span>
+            <div class="table__cell table__cell-price">
+              <span>$28.00</span>
+              <span class="cart-item__old-price">$30.00</span>
             </div>
-            <div class="table__cell">
+            <div class="table__cell table__cell-qty">
               <div class="cart-item__qty">
                 <button class="cart-item__qty-btn">
                   <img
@@ -161,19 +164,21 @@
                 </button>
               </div>
             </div>
-            <div class="table__cell">$28.00</div>
+            <div class="table__cell table__cell--total">$28.00</div>
           </div>
           <div class="table__row cart-item">
             <div class="table__cell">
               <img class="table__img" src="/imgs/cart.png" alt="product" />
               <div class="cart-item__block">
                 <h2 class="cart-item__title">Medium-bodied</h2>
-                <p class="cart-item__text">2 bottles</p>
+                <div class="cart-item__points">
+                  <p class="cart-item__text">2 bottles</p>
+                </div>
                 <a href="#" class="cart-item__text cart-item__link">Remove</a>
               </div>
             </div>
-            <div class="table__cell">$28.00</div>
-            <div class="table__cell">
+            <div class="table__cell table__cell-price">$28.00</div>
+            <div class="table__cell table__cell-qty">
               <div class="cart-item__qty">
                 <button class="cart-item__qty-btn">
                   <img
@@ -194,14 +199,17 @@
                 </button>
               </div>
             </div>
-            <div class="table__cell">$71.18</div>
+            <div class="table__cell table__cell--total">$71.18</div>
           </div>
           <div class="table__row table__row--col-2 table__row--noborder">
             <div class="gift">
               <div class="gift__header">
                 <img src="/imgs/icons/gift.svg" alt="gift" class="gift__icon" />
-                <h3 class="gift__title">Sending a gift?</h3>
+                <h3 class="gift__title text--small">Sending a gift?</h3>
                 <a href="#" class="gift__remove cart-item__link">Remove</a>
+                <a href="#" class="text--small gift__add-msg"
+                  ><span>Add message</span><img src="/imgs/icons/rarr-black.svg" alt="arrow"></a
+                >
               </div>
               <textarea
                 name="gift__textarea"
@@ -210,7 +218,9 @@
               >
 Happy 25th Birthday Eddie! Hope you have a wonderful celebration!!!</textarea
               >
-              <button class="cart-item__btn text--small">save message</button>
+              <button class="cart-item__btn text--small gift__btn">
+                save message
+              </button>
               <a href="#" class="gift__cancel cart-item__link">Cancel</a>
             </div>
             <div class="checkout">
@@ -255,7 +265,7 @@ Happy 25th Birthday Eddie! Hope you have a wonderful celebration!!!</textarea
                 ></label>
               </div>
               <hr class="checkout__divider" />
-              <button class="cart-item__btn text--small">save message</button>
+              <button class="cart-item__btn text--small">Checkout</button>
             </div>
             <div class="additional-products">
               <h3 class="additional-products__title text--small">
