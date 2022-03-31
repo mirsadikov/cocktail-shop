@@ -14,6 +14,22 @@
       href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="/styles/product.css" />
     <script src="/scripts/pdp.js" type="module"></script>
     <title>Product / Cocktail</title>
@@ -235,22 +251,34 @@
           </div>
           <!-- IMAGE -->
           <div class="product-hero__img-container">
-            <img
-              src="/imgs/pdp/hero1.png"
-              alt="produdct"
-              class="product-hero__img"
-            />
+            <div class="product-hero__img-list owl-carousel">
+              <img
+                src="/imgs/pdp/product1.png"
+                alt="produdct"
+                class="product-hero__img"
+              />
+              <img
+                src="/imgs/pdp/product2.png"
+                alt="produdct"
+                class="product-hero__img"
+              /><img
+                src="/imgs/pdp/product3.png"
+                alt="produdct"
+                class="product-hero__img"
+              /><img
+                src="/imgs/pdp/product4.png"
+                alt="produdct"
+                class="product-hero__img"
+              />
+            </div>
             <div class="product-hero__img-nav">
-              <img src="/imgs/icons/larr-big.svg" alt="arrow" />
-              <div class="product-hero__dots">
-                <span
-                  class="product-hero__dot product-hero__dot--active"
-                ></span>
-                <span class="product-hero__dot"></span>
-                <span class="product-hero__dot"></span>
-                <span class="product-hero__dot"></span>
-              </div>
-              <img src="/imgs/icons/rarr-big.svg" alt="arrow" />
+              <button class="product-hero__img-prev">
+                <img src="/imgs/icons/larr-big.svg" alt="arrow" />
+              </button>
+              <div class="product-hero__dots"></div>
+              <button class="product-hero__img-next">
+                <img src="/imgs/icons/rarr-big.svg" alt="arrow" />
+              </button>
             </div>
           </div>
           <!-- ORDER -->
@@ -465,7 +493,7 @@
             veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
             ea commodo consequat.
           </p>
-          <ul class="benefits__ingredients">
+          <ul class="benefits__ingredients owl-carousel">
             <li class="benefits__ingredient">
               <img
                 src="/imgs/pdp/strawberry.svg"
@@ -503,6 +531,7 @@
               </p>
             </li>
           </ul>
+          <div class="benefits__dots"></div>
           <a href="#" class="benefits__link link--underlined text--small">
             Ingredient Glossary
           </a>
@@ -537,12 +566,12 @@
         <div class="recipes__container">
           <h3 class="recipes__sub text--small">De soi unique recipes</h3>
           <div class="recipes__wrapper">
-            <ul class="recipes__list">
+            <ul class="recipes__list owl-carousel">
               <div class="recipe">
                 <div class="recipe__img-container">
-                  <img class="recipe__img" src="/imgs/pdp/recipe1.png" alt="" />
+                  <img class="recipe__img" src="/imgs/pdp/recipe1.png" />
                   <img
-                    src="/imgs/pdp/hero1.png"
+                    src="/imgs/pdp/recipe.png"
                     alt="bottle"
                     class="recipe__img-product"
                   />
@@ -565,7 +594,30 @@
                 <div class="recipe__img-container">
                   <img class="recipe__img" src="/imgs/pdp/recipe2.png" alt="" />
                   <img
-                    src="/imgs/pdp/hero1.png"
+                    src="/imgs/pdp/recipe.png"
+                    alt="bottle"
+                    class="recipe__img-product"
+                  />
+                </div>
+                <div class="recipe__details">
+                  <h2 class="titles recipe__author">Tom Collins Jr.</h2>
+                  <h3 class="recipe__sub text--small">Ingredients</h3>
+                  <ul class="recipe__ingredients">
+                    <li class="recipe__ingredient">3 oz Riverine</li>
+                    <li class="recipe__ingredient">3/4 oz Lemon Juice</li>
+                    <li class="recipe__ingredient">3/4 oz Simple Syrup</li>
+                    <li class="recipe__ingredient">Club Soda</li>
+                  </ul>
+                  <a href="#" class="recipe__link text--small link--underlined"
+                    >View Full recipe</a
+                  >
+                </div>
+              </div>
+              <div class="recipe">
+                <div class="recipe__img-container">
+                  <img class="recipe__img" src="/imgs/pdp/recipe2.png" alt="" />
+                  <img
+                    src="/imgs/pdp/recipe.png"
                     alt="bottle"
                     class="recipe__img-product"
                   />
@@ -676,10 +728,19 @@
 
       <!-- ADDITIONAL PRODUCTS -->
       <secton class="additional-products">
-        <h2 class="additional-products__title titles">
-          You might also like...
-        </h2>
-        <div class="additional-products__container">
+        <div class="additional-products__header">
+          <button class="additional-products__prev">
+            <img src="/imgs/icons/larr-big.svg" alt="arrow" />
+          </button>
+          <h2 class="additional-products__title titles">
+            You might also like...
+          </h2>
+          <button class="additional-products__next">
+            <img src="/imgs/icons/rarr-big.svg" alt="arrow" />
+          </button>
+        </div>
+
+        <div class="additional-products__container owl-carousel">
           <div class="product-card">
             <img
               src="/imgs/shop-product.jpg"

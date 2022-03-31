@@ -20,6 +20,7 @@
 
 .product-hero__container > * {
   /* width: calc(100% / 3); */
+  width: 100%;
   min-width: 100%;
 }
 
@@ -194,31 +195,50 @@
   text-align: center;
 }
 
+.product-hero__img-list {
+  padding: 0 2rem;
+}
+
 .product-hero__img {
-  max-height: 60rem;
-  transform: translateX(-0.8rem);
-  filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.3));
-  -webkit-filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.3));
-  -moz-filter: drop-shadow(20px 20px 10px rgba(0, 0, 0, 0.3));
+  max-height: 63rem;
+  object-fit: contain;
+  padding-bottom: 2rem;
 }
 
 .product-hero__img-nav {
-  margin-top: 7rem;
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.product-hero__dots {
+.product-hero__img-prev,
+.product-hero__img-next {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.product-hero__dots,
+.benefits__dots {
   display: inline-block;
   margin: 0 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.product-hero__dot {
+.product-hero__dot,
+.benefits__dot {
   display: inline-block;
+  border: none;
   height: 8px;
   width: 8px;
   border-radius: 50%;
   background-color: var(--color-grey-light);
   margin: 0 0.5rem;
 }
-.product-hero__dot--active {
+.product-hero__dot.active,
+.benefits__dot.active {
   background-color: var(--color-black);
 }
 
@@ -313,13 +333,14 @@
   line-height: 148%;
   margin-bottom: 2.4rem;
 }
-.benefits__ingredients {
-  display: flex;
-}
-
 .benefits__ingredient {
   user-select: none;
   padding: 4rem;
+}
+
+.benefits__ingredient-img {
+  max-height: 20rem;
+  object-fit: contain;
 }
 
 .benefits__ingredient-title {
@@ -401,8 +422,13 @@
   padding: 0 4rem;
 }
 
+/* .recipes .owl-stage-outer {
+  overflow: visible !important;
+} */
+
 .recipe {
-  min-width: 83%;
+  max-width: 1400px;
+  width: 83vw;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
@@ -415,13 +441,18 @@
 }
 
 .recipe__img {
+  max-height: 70rem;
+  object-fit: contain;
   height: 100%;
-  width: 75%;
+  width: 75% !important;
+  display: inline !important;
 }
 
 .recipe__img-product {
-  position: absolute;
-  height: 75%;
+  position: absolute !important;
+  display: inline !important;
+  width: auto !important;
+  height: 75% !important;
   top: 50%;
   transform: translate(-50%, -50%);
   filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3));
@@ -452,7 +483,7 @@
   color: var(--color-white);
   z-index: 9999;
   top: 50%;
-  left: calc(83% - 2.5rem);
+  left: calc(83% + 4rem);
   transform: translate(-50%, -50%);
   font-weight: 700;
   font-size: 18px;
@@ -531,6 +562,23 @@
   width: 100%;
   display: flex;
   max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.additional-products__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.additional-products__prev,
+.additional-products__next {
+  display: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 1rem 0;
 }
 
 .additional-products__title {
@@ -576,6 +624,11 @@
     grid-column: 1 / -1;
     grid-row: 1 / 2;
   }
+
+  .benefits__ingredient-img {
+    max-height: 17rem;
+  }
+
   .enjoy__title {
     line-height: 10rem;
   }
@@ -607,7 +660,8 @@
   }
 
   .product-hero__img {
-    max-height: 45rem;
+    max-height: 50rem;
+    padding-bottom: 2rem;
   }
 
   .product-hero__text {
@@ -618,12 +672,12 @@
     padding: 0.5rem 0;
   }
 
-  .benefits__ingredients {
-    overflow: scroll;
+  .benefits {
+    padding: 4rem 0;
   }
 
-  .benefits__ingredient {
-    flex: 1 0 50%;
+  .benefits__link {
+    margin-top: 3rem;
   }
 
   .benefits__ingredient-img {
@@ -661,11 +715,13 @@
   .recipe__details {
     padding: 2rem;
   }
-  .recipe {
-    min-width: 100%;
-  }
+
   .recipe__next-btn {
-    left: calc(100% - 5.2rem);
+    left: calc(83vw + 2rem);
+  }
+  .recipe {
+    padding: 0;
+    padding-top: 4rem;
   }
 
   .benefits__desc {
@@ -698,7 +754,12 @@
     gap: 0;
   }
 
+  .product-hero__img {
+    padding-bottom: 0rem;
+  }
+
   .product-hero__img-container {
+    width: 100vw;
     order: -10;
     margin-bottom: 5rem;
     margin-left: -3rem;
@@ -759,6 +820,10 @@
     flex: 1 0 100%;
   }
 
+  .benefits__link {
+    display: none;
+  }
+
   .recipes {
     background-color: transparent;
     border-bottom: 1px solid var(--color-grey-light);
@@ -766,6 +831,7 @@
 
   .recipe {
     display: block;
+    width: calc(100vw - 4rem);
   }
 
   .recipe:not(:first-child) {
@@ -802,12 +868,25 @@
     padding: 0;
   }
 
-  .additional-products__container {
-    overflow: scroll;
+  .additional-products__header {
+    justify-content: space-between;
+  }
+
+  .accordions--absolute .accordion__content {
+    position: static;
+  }
+  .product-hero .accordion--open,
+  .product-hero .accordion--open .accordion__content {
+    background-color: transparent;
   }
 
   .additional-products .product-card {
     flex: 1 0 50%;
+  }
+
+  .additional-products__prev,
+  .additional-products__next {
+    display: block;
   }
 }
 

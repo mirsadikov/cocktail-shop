@@ -44,6 +44,10 @@ const testimonials = [
     text: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     logo: '/imgs/testimonials/foodnwine.png',
   },
+  {
+    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    logo: '/imgs/testimonials/saveur.png',
+  },
 ];
 
 bestSellers.forEach(function (item) {
@@ -66,59 +70,65 @@ bestSellers.forEach(function (item) {
   bsellerList.insertAdjacentHTML('beforeend', bsellerHTML);
 });
 
-testimonials.forEach(function (item, i) {
-  dotsContainer.insertAdjacentHTML(
-    'beforeend',
-    `<span class="testimonials__dot" data-index="${i}"></span>`,
-  );
+testimonials.forEach((item) => {
+  const testimonialHTML = `
+      <li class="testimonial">
+        <p class="testimonial__text">
+          ${item.text}
+        </p>
+        <img
+          class="testimonial__brand"
+          src="${item.logo}"
+          alt="forbes logo"
+          loading="lazy"
+        />
+      </li>
+    `;
+  testimonialList.insertAdjacentHTML('beforeend', testimonialHTML);
 });
 
-const duplicatedTestimonials = [...testimonials, ...testimonials];
-const dots = document.querySelectorAll('.testimonials__dot');
-let testimonialIndex = 0;
+$(document).ready(function () {
+  const bs = $('.bsellers__list');
+  bs.owlCarousel({
+    autoplay: true,
+    loop: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      650: {
+        items: 3,
+      },
+      900: {
+        items: 4,
+      },
+    },
+  });
 
-dotsContainer.addEventListener('click', function (e) {
-  if (e.target.classList.contains('testimonials__dot')) {
-    testimonialIndex = parseInt(e.target.dataset.index);
-    renderTestimonial();
-  }
+  $('.bsellers__next').click(function () {
+    bs.trigger('next.owl.carousel');
+  });
+  $('.bsellers__prev').click(function () {
+    bs.trigger('prev.owl.carousel');
+  });
+
+  const test = $('.testimonials__list');
+  test.owlCarousel({
+    autoplay: true,
+    loop: true,
+    dotClass: 'testimonials__dot',
+    dotsContainer: '.testimonials__dots',
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      800: {
+        items: 3,
+      },
+    },
+  });
 });
-
-function renderTestimonial() {
-  dots.forEach(function (dot) {
-    dot.classList.remove('testimonials__dot--active');
-  });
-
-  if (testimonialIndex == bestSellers.length - 1) {
-    testimonialIndex = 0;
-  }
-
-  const testimonialToRender = duplicatedTestimonials.slice(
-    testimonialIndex,
-    testimonialIndex + 3,
-  );
-
-  testimonialList.innerHTML = '';
-  testimonialToRender.forEach((item) => {
-    const testimonialHTML = `
-    <li class="testimonial">
-      <p class="testimonial__text">
-        ${item.text}
-      </p>
-      <img
-        class="testimonial__brand"
-        src="${item.logo}"
-        alt="forbes logo"
-        loading="lazy"
-      />
-    </li>
-  `;
-    testimonialList.insertAdjacentHTML('beforeend', testimonialHTML);
-  });
-  dots[testimonialIndex].classList.add('testimonials__dot--active');
-  testimonials.push(testimonials.shift());
-  testimonialIndex++;
-}
-
-renderTestimonial();
-setInterval(renderTestimonial, 5000);

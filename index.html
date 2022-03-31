@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/home.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +15,23 @@
       href="https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles/home.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="/scripts/index.js"></script>
     <title>Cocktail</title>
   </head>
   <body>
@@ -133,25 +150,16 @@
       <!-- BEST SELLERS -->
       <section class="bsellers">
         <div class="bseller__container">
-          <div class="bsellers__title titles">Our best sellers</div>
-          <ul class="bsellers__list">
-            <!-- <li class="bseller">
-              <img
-                src="/imgs/best-seller/bseller1.jpg"
-                alt="best sellers"
-                class="bseller__img"
-              />
-              <h3 class="bseller__title titles">Ipsum dolor</h3>
-              <p class="bseller__desc">
-                Ut enim ad minim veniam, quis nostrud exerp ex ea commodo
-                consequat.
-              </p>
-              <a href="#" class="bseller__link link--underlined text--small"
-                >Shop now</a
-              >
-            </li>
-             -->
-          </ul>
+          <div class="bsellers__header">
+            <button class="bsellers__prev">
+              <img src="/imgs/icons/larr-big.svg" alt="arrow" />
+            </button>
+            <div class="bsellers__title titles">Our best sellers</div>
+            <button class="bsellers__next">
+              <img src="/imgs/icons/rarr-big.svg" alt="arrow" />
+            </button>
+          </div>
+          <ul class="bsellers__list owl-carousel"></ul>
         </div>
       </section>
 
@@ -169,21 +177,7 @@
       <!-- TESTIMONIALS -->
       <section class="testimonials">
         <div class="testimonials__container">
-          <ul class="testimonials__list">
-            <!-- <li class="testimonial">
-              <p class="testimonial__text">
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-              <img
-                class="testimonial__brand"
-                src="/imgs/testimonials/forbes.png"
-                alt="forbes logo"
-                loading="lazy"
-              />
-            </li>
-            -->
-          </ul>
+          <ul class="testimonials__list owl-carousel"></ul>
           <div class="testimonials__dots">
             <!-- <span class="testimonials__dot testimonials__dot--active"></span>
             <span class="testimonials__dot"></span> -->
@@ -448,7 +442,5 @@
         </div>
       </div>
     </footer>
-
-    <script defer src="/scripts/index.js"></script>
   </body>
 </html>
